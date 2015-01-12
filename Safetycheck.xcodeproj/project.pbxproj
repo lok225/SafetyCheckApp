@@ -13,6 +13,10 @@
 		E35B3B111A5AC0FF0056CA6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E35B3B101A5AC0FF0056CA6E /* Images.xcassets */; };
 		E35B3B141A5AC0FF0056CA6E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E35B3B121A5AC0FF0056CA6E /* LaunchScreen.xib */; };
 		E35B3B201A5AC0FF0056CA6E /* SafetycheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B3B1F1A5AC0FF0056CA6E /* SafetycheckTests.swift */; };
+		E35B3B2A1A5AC4090056CA6E /* SafetyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B3B291A5AC4090056CA6E /* SafetyModel.swift */; };
+		E35B3B2C1A5AF3270056CA6E /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B3B2B1A5AF3270056CA6E /* TaskCell.swift */; };
+		E3B02FB51A644A5500ED24B6 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B02FB41A644A5500ED24B6 /* AddTaskViewController.swift */; };
+		E3B3DAD71A5C1218000C8712 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B3DAD61A5C1218000C8712 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		E35B3B191A5AC0FF0056CA6E /* SafetycheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafetycheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35B3B1E1A5AC0FF0056CA6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E35B3B1F1A5AC0FF0056CA6E /* SafetycheckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetycheckTests.swift; sourceTree = "<group>"; };
+		E35B3B291A5AC4090056CA6E /* SafetyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafetyModel.swift; sourceTree = "<group>"; };
+		E35B3B2B1A5AF3270056CA6E /* TaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		E3B02FB41A644A5500ED24B6 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		E3B3DAD61A5C1218000C8712 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +87,11 @@
 			children = (
 				E35B3B091A5AC0FF0056CA6E /* AppDelegate.swift */,
 				E35B3B0B1A5AC0FF0056CA6E /* ViewController.swift */,
+				E3B3DAD61A5C1218000C8712 /* DetailViewController.swift */,
+				E3B02FB41A644A5500ED24B6 /* AddTaskViewController.swift */,
 				E35B3B0D1A5AC0FF0056CA6E /* Main.storyboard */,
+				E35B3B291A5AC4090056CA6E /* SafetyModel.swift */,
+				E35B3B2B1A5AF3270056CA6E /* TaskCell.swift */,
 				E35B3B101A5AC0FF0056CA6E /* Images.xcassets */,
 				E35B3B121A5AC0FF0056CA6E /* LaunchScreen.xib */,
 				E35B3B071A5AC0FF0056CA6E /* Supporting Files */,
@@ -212,7 +224,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E35B3B2C1A5AF3270056CA6E /* TaskCell.swift in Sources */,
+				E3B02FB51A644A5500ED24B6 /* AddTaskViewController.swift in Sources */,
 				E35B3B0C1A5AC0FF0056CA6E /* ViewController.swift in Sources */,
+				E3B3DAD71A5C1218000C8712 /* DetailViewController.swift in Sources */,
+				E35B3B2A1A5AC4090056CA6E /* SafetyModel.swift in Sources */,
 				E35B3B0A1A5AC0FF0056CA6E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +421,7 @@
 				E35B3B251A5AC0FF0056CA6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E35B3B261A5AC0FF0056CA6E /* Build configuration list for PBXNativeTarget "SafetycheckTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +430,7 @@
 				E35B3B281A5AC0FF0056CA6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
