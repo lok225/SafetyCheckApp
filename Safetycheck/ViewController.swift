@@ -51,16 +51,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     @IBAction func reloadButtonTapped(sender: UIBarButtonItem) {
-        println(doneTaskArray.count)
         
-        var count = doneTaskArray.count
-        for var number = 0; number < count; number++ {
-            
-            taskArray.append(SafetyModel(task: doneTaskArray[0].task, done: false))
-            doneTaskArray.removeAtIndex(0)
-        }
-        
+        baseArray[0] += baseArray[1]
+        baseArray[1].removeAll(keepCapacity: true)
         myTable.reloadData()
+        
     }
     
     
@@ -154,7 +149,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
             })
             
-            return [notDoneAction]
+            var deleteAction = UITableViewRowAction(style: .Default, title: "Slet", handler: { (action, indexPath) -> Void in
+                tableView.editing = false
+                
+                self.baseArray[indexPath.section].removeAtIndex(indexPath.row)
+                self.myTable.reloadData()
+            })
+            
+            return [notDoneAction, deleteAction]
         }
     }
     
@@ -173,8 +175,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             return "Færdige"
         }
     }
-    
-    
     
 }
 
